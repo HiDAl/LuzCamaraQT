@@ -13,11 +13,12 @@ prueba
 
 Para que cachen:
 	- los objetos heredan de QListItemWidget, esto es para que los objetos se puedan agregar a un QListWidget y asi sea mas facil recuperarlos cuando se seleccionen en la lista (ver el codigo del evento KeyPress en mainwindow.cpp)
+
 	- Existe una clase RepositorioObjetos que es un singleton (por cosas obvias) que mantiene internamente todos los objetos. Para usarla se debe pedir una instancia de la clase, mediante:
 
 		RepositorioObjetos *repo = RepositorioObjetos::instance();
 
-		y luego jugar con ella. Hereda de QMap, por las facilidades que da esta para mantener la lista de objeto. Ahora, el repositorio guarda los objetos mediante un hash que se le deben dar a mano, la gracia seria que ingresara los objetos mediante un hash automatico (onda, nombre objeto #<numero>, para mas facilidad de visualizacion en el QListWidget y evitar colisiones en el Repo)
+		y luego jugar con ella. Hereda de QMap, por las facilidades que da esta para mantener la lista de objeto. Ahora, el repositorio guarda los objetos mediante un hash que se le deben dar a mano, la gracia seria que ingresara los objetos mediante un hash automatico (onda, nombre objeto #<numero>, para mas facilidad de visualizacion en el QListWidget y evitar colisiones en el Repo). A pesar de esto, estoy pensando que esta clase debiese ser heredar de QListWidget (siendo singleton), pero me tinca que daria atados... habria que ver, ya que el repo guarda punteros, asi que si se modifica algo del repo, se modifica en el QListWidget, asi que no habria atados. El unico problema que le veo, es que se debiese agregar el QListWidget mediante codigo. 
 
 	- Cuando se seleccionan un objeto en list, este se puede mover mediante las teclas (arriba/abajo = eje Y, izkierda/derecha = eje X, PageUp/PageDown = eje Z). el unico problema es que al apretar lass teclas del eje Z e Y, cambia la seleccion del QListWidget, pero eso debe ser facil de solucionar.
 
