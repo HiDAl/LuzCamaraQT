@@ -4,6 +4,10 @@
 #define GLWIDGET_H
 
 #include <QGLWidget>
+#include <QTime>
+
+#include "cubo.h"
+
 
 class GLWidget : public QGLWidget
 {
@@ -16,11 +20,6 @@ public:
     QSize minimumSizeHint() const ;
     QSize sizeHint() const ;
 
-public slots:
-    void rePaint();
-
-signals:
-    void rePainted();
 
 protected:
     void initializeGL();
@@ -29,6 +28,9 @@ protected:
 
 private:
     double rot;
+    QTime qTime;
+    int lastTime;
+    Cubo c;
 };
 
 #endif // GLWIDGET_H

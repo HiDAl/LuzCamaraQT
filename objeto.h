@@ -12,9 +12,12 @@ protected:
     QVector3D Rotation;
 
 public:
-    virtual void draw();
+    Objeto();
+    virtual void draw(float a);
 
-    void setRotation(QVector3D rot);
+    void setRotation(QVector3D rot) ;
+    QVector3D getRotation() const;
+
 };
 
 #endif // OBJETO_H

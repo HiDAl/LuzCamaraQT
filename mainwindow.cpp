@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
        debe agregar al layout que se aplicando (aca puse un verticalLayout como
        ejemplo no mas)
     */
-    ui->verticalLayout_2->addWidget(new GLWidget);
+    ui->verticalLayout->insertWidget(0, new GLWidget);
 }
 
 MainWindow::~MainWindow()

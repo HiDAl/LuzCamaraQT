@@ -8,7 +8,7 @@ class Cubo : public Objeto
 {
 public:
     Cubo();
-    void draw();
+    void draw(float angle);
 };
 
 #endif // CUBO_H
