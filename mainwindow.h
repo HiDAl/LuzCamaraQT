@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "glwidget.h"
+#include "repositorioobjetos.h"
 
 namespace Ui {
     class MainWindow;
@@ -16,10 +17,13 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    void keyPressEvent(QKeyEvent *event);
+
 
 private:
     Ui::MainWindow *ui;
     GLWidget *glWidget;
+    RepositorioObjetos * repo;
 };
 
 #endif // MAINWINDOW_H

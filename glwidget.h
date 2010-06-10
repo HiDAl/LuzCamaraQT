@@ -7,6 +7,8 @@
 #include <QTime>
 
 #include "cubo.h"
+#include "esfera.h"
+#include "repositorioobjetos.h"
 
 
 class GLWidget : public QGLWidget
@@ -30,7 +32,7 @@ private:
     double rot;
     QTime qTime;
     int lastTime;
-    Cubo c;
+    RepositorioObjetos *repo;
 };
 
 #endif // GLWIDGET_H

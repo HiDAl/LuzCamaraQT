@@ -1,4 +1,3 @@
-#include <QtOpenGL>
 #include "objeto.h"
 
 #ifndef CUBO_H
@@ -8,7 +7,7 @@ class Cubo : public Objeto
 {
 public:
     Cubo();
-    void draw(float angle);
+    void draw(float dt);
 };
 
 #endif // CUBO_H

@@ -8,9 +8,13 @@ SOURCES += main.cpp \
     mainwindow.cpp \
     objeto.cpp \
     cubo.cpp \
-    glwidget.cpp
+    glwidget.cpp \
+    esfera.cpp \
+    repositorioobjetos.cpp
 HEADERS += mainwindow.h \
     objeto.h \
     cubo.h \
-    glwidget.h
+    glwidget.h \
+    esfera.h \
+    repositorioobjetos.h
 FORMS += mainwindow.ui
