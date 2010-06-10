@@ -76,49 +76,62 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-3ek1coggCi,guid=e812e21f7e766c1d3c0ee7f24bf95cd2</value>
-    <value type="QString">DEFAULTS_PATH=/usr/share/gconf/gnome.default.path</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=107aa3e862be97299127241024127729600000012050039</value>
-    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">ALSA_PLUGINS_DIR=/usr/lib/alsa-lib</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-YjTNwaqknO,guid=311c6f9724ed60cccdb36a1500000022</value>
+    <value type="QString">DESKTOP_AUTOSTART_ID=10cf1356fd3d49cd15127601025985335900000036700012</value>
     <value type="QString">DISPLAY=:0.0</value>
-    <value type="QString">GDMSESSION=gnome</value>
-    <value type="QString">GDM_KEYBOARD_LAYOUT=es</value>
-    <value type="QString">GDM_LANG=en_GB.utf8</value>
+    <value type="QString">EDITOR=vim</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-Yy0iuX</value>
-    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-CDwJRu</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/hidal/.gtkrc-1.2-gnome2</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
     <value type="QString">HOME=/home/hidal</value>
-    <value type="QString">LANG=en_GB.utf8</value>
-    <value type="QString">LANGUAGE=en_GB:en</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">JAVA_HOME=/opt/java/jre</value>
+    <value type="QString">LANG=es_CL.UTF-8</value>
     <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LIBGL_ALWAYS_INDIRECT=1</value>
     <value type="QString">LOGNAME=hidal</value>
-    <value type="QString">MANDATORY_PATH=/usr/share/gconf/gnome.mandatory.path</value>
+    <value type="QString">LS_COLORS=no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mng=01;35:*.xcf=01;35:*.pcx=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.avi=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.mov=01;35:*.qt=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.mp3=00;36:*.wav=00;36:*.mid=00;36:*.midi=00;36:*.au=00;36:*.ogg=00;36:*.flac=00;36:*.aac=00;36:</value>
+    <value type="QString">MAIL=/var/mail/hidal</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
     <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-hidal</value>
-    <value type="QString">PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PATH=/usr/bin:/opt/wine/bin:/bin:/usr/bin:/sbin:/usr/sbin:/opt/java/jre/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
     <value type="QString">PWD=/home/hidal</value>
-    <value type="QString">QTDIR=/usr/share/qt4</value>
-    <value type="QString">SESSION_MANAGER=local/hidalina:@/tmp/.ICE-unix/1158,unix/hidalina:/tmp/.ICE-unix/1158</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">SESSION_MANAGER=local/HiDAlina:@/tmp/.ICE-unix/3670,unix/HiDAlina:/tmp/.ICE-unix/3670</value>
     <value type="QString">SHELL=/bin/bash</value>
-    <value type="QString">SPEECHD_PORT=7560</value>
-    <value type="QString">SSH_AGENT_PID=1363</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-Yy0iuX/ssh</value>
+    <value type="QString">SHLVL=2</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-CDwJRu/ssh</value>
+    <value type="QString">TERM=linux</value>
     <value type="QString">USER=hidal</value>
-    <value type="QString">USERNAME=hidal</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-hidal-2LtCa3/database</value>
-    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg/xdg-gnome:/etc/xdg</value>
-    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=62dc8192111029f5c81780444bd1a8ab-1274633425.923689-1090974099</value>
+    <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
+    <value type="QString">XAUTHORITY=/home/hidal/.Xauthority</value>
+    <value type="QString">XDG_CACHE_HOME=/home/hidal/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/hidal/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/hidal/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=87f498f83baf9e79a31ba9be00000252-1276010257.406518-1290992740</value>
+    <value type="QString">__GL_YIELD=NOTHING</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">/home/hidal/Projects/LuzCamaraQT/LuzCamaraQT/LuzCamaraQT.pro</value>
+    <value type="QString">/home/hidal/Projects/LuzCamaraQT/LuzCamaraQT.pro</value>
     <value type="QString">-spec</value>
-    <value type="QString">linux-g++</value>
+    <value type="QString">linux-g++-64</value>
     <value type="QString">-r</value>
     <value type="QString">CONFIG+=debug</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">/usr/bin/qmake-qt4</value>
-   <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/hidal/Projects/LuzCamaraQT/LuzCamaraQT</value>
+   <value key="abstractProcess.command" type="QString">/usr/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">false</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/hidal/Projects/LuzCamaraQT</value>
   </valuemap>
  </data>
  <data>
@@ -126,38 +139,51 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-3ek1coggCi,guid=e812e21f7e766c1d3c0ee7f24bf95cd2</value>
-    <value type="QString">DEFAULTS_PATH=/usr/share/gconf/gnome.default.path</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=107aa3e862be97299127241024127729600000012050039</value>
-    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">ALSA_PLUGINS_DIR=/usr/lib/alsa-lib</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-YjTNwaqknO,guid=311c6f9724ed60cccdb36a1500000022</value>
+    <value type="QString">DESKTOP_AUTOSTART_ID=10cf1356fd3d49cd15127601025985335900000036700012</value>
     <value type="QString">DISPLAY=:0.0</value>
-    <value type="QString">GDMSESSION=gnome</value>
-    <value type="QString">GDM_KEYBOARD_LAYOUT=es</value>
-    <value type="QString">GDM_LANG=en_GB.utf8</value>
+    <value type="QString">EDITOR=vim</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-Yy0iuX</value>
-    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-CDwJRu</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/hidal/.gtkrc-1.2-gnome2</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
     <value type="QString">HOME=/home/hidal</value>
-    <value type="QString">LANG=en_GB.utf8</value>
-    <value type="QString">LANGUAGE=en_GB:en</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">JAVA_HOME=/opt/java/jre</value>
+    <value type="QString">LANG=es_CL.UTF-8</value>
     <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LIBGL_ALWAYS_INDIRECT=1</value>
     <value type="QString">LOGNAME=hidal</value>
-    <value type="QString">MANDATORY_PATH=/usr/share/gconf/gnome.mandatory.path</value>
+    <value type="QString">LS_COLORS=no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mng=01;35:*.xcf=01;35:*.pcx=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.avi=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.mov=01;35:*.qt=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.mp3=00;36:*.wav=00;36:*.mid=00;36:*.midi=00;36:*.au=00;36:*.ogg=00;36:*.flac=00;36:*.aac=00;36:</value>
+    <value type="QString">MAIL=/var/mail/hidal</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
     <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-hidal</value>
-    <value type="QString">PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PATH=/usr/bin:/opt/wine/bin:/bin:/usr/bin:/sbin:/usr/sbin:/opt/java/jre/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
     <value type="QString">PWD=/home/hidal</value>
-    <value type="QString">QTDIR=/usr/share/qt4</value>
-    <value type="QString">SESSION_MANAGER=local/hidalina:@/tmp/.ICE-unix/1158,unix/hidalina:/tmp/.ICE-unix/1158</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">SESSION_MANAGER=local/HiDAlina:@/tmp/.ICE-unix/3670,unix/HiDAlina:/tmp/.ICE-unix/3670</value>
     <value type="QString">SHELL=/bin/bash</value>
-    <value type="QString">SPEECHD_PORT=7560</value>
-    <value type="QString">SSH_AGENT_PID=1363</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-Yy0iuX/ssh</value>
+    <value type="QString">SHLVL=2</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-CDwJRu/ssh</value>
+    <value type="QString">TERM=linux</value>
     <value type="QString">USER=hidal</value>
-    <value type="QString">USERNAME=hidal</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-hidal-2LtCa3/database</value>
-    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg/xdg-gnome:/etc/xdg</value>
-    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=62dc8192111029f5c81780444bd1a8ab-1274633425.923689-1090974099</value>
+    <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
+    <value type="QString">XAUTHORITY=/home/hidal/.Xauthority</value>
+    <value type="QString">XDG_CACHE_HOME=/home/hidal/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/hidal/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/hidal/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=87f498f83baf9e79a31ba9be00000252-1276010257.406518-1290992740</value>
+    <value type="QString">__GL_YIELD=NOTHING</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
@@ -165,7 +191,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/hidal/Projects/LuzCamaraQT/LuzCamaraQT</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/hidal/Projects/LuzCamaraQT</value>
   </valuemap>
  </data>
  <data>
