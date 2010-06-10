@@ -1,2 +1,7 @@
 Proyecto para el Ramo Taller de Computaci'on Gr'afica 2010-1.
 
+Para hacerlo funcionar:
+
+$ qmake
+$ make
+$ ./LuzCamaraQT
