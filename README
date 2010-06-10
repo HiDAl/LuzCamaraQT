@@ -5,3 +5,21 @@ Para hacerlo funcionar:
 $ qmake
 $ make
 $ ./LuzCamaraQT
+
+-------------------
+
+Para que cachen:
+	- los objetos heredan de QListItemWidget, esto es para que los objetos se puedan agregar a un QListWidget y asi sea mas facil recuperarlos cuando se seleccionen en la lista (ver el codigo del evento KeyPress en mainwindow.cpp)
+	- Existe una clase RepositorioObjetos que es un singleton (por cosas obvias) que mantiene internamente todos los objetos. Para usarla se debe pedir una instancia de la clase, mediante:
+
+		RepositorioObjetos *repo = RepositorioObjetos::instance();
+
+		y luego jugar con ella. Hereda de QMap, por las facilidades que da esta para mantener la lista de objeto. Ahora, el repositorio guarda los objetos mediante un hash que se le deben dar a mano, la gracia seria que ingresara los objetos mediante un hash automatico (onda, nombre objeto #<numero>, para mas facilidad de visualizacion en el QListWidget y evitar colisiones en el Repo)
+
+	- Cuando se seleccionan un objeto en list, este se puede mover mediante las teclas (arriba/abajo = eje Y, izkierda/derecha = eje X, PageUp/PageDown = eje Z). el unico problema es que al apretar lass teclas del eje Z e Y, cambia la seleccion del QListWidget, pero eso debe ser facil de solucionar.
+
+	- No se si necesario agregar nuevos tipos de objetos aun. Por si kisieran, solo agregar la nueva clase, que herede de Objeto, implemente el metodo draw(dt) y siga una logica parecida a la que esta en Cubo.cpp o Esfera.cpp.
+
+	- El escenario es el GLWidget, ahi se maneja el tiempo de la escena (para efectos de la rotacion y otras animaciones posibles)
+
+	- y eso seria... cualquier cosa a mi mail
