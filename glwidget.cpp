@@ -73,3 +73,9 @@ void GLWidget::resizeGL(int width, int height)
     glMatrixMode(GL_MODELVIEW);     // Select The Modelview Matrix
     glLoadIdentity();
 }
+
+void GLWidget::mousePressEvent(QMouseEvent *event)
+{
+    event->accept();
+    setFocus(Qt::MouseFocusReason);
+}
