@@ -28,8 +28,8 @@ MainWindow::MainWindow(QWidget *parent) :
     e1->setPosition(QVector3D(0, -3, -13));
     e1->setRotVelocity(QVector3D(45, 0, 100));
 
-    repo->insert("Cubo", c1);
-    repo->insert("Esfera", e1);
+    repo->insert(c1);
+    repo->insert(e1);
 
     ui->listWidget->addItem(c1);
     ui->listWidget->insertItem(0, e1);

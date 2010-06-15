@@ -15,9 +15,13 @@ protected:
 
 public:
     static RepositorioObjetos *instance();
+    ~RepositorioObjetos();
+
+    void insert(Objeto *obj);
 
 private:
     static RepositorioObjetos *inst;
+    int count;
 
 };
 

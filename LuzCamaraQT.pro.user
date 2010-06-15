@@ -77,12 +77,12 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
     <value type="QString">ALSA_PLUGINS_DIR=/usr/lib/alsa-lib</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-y1C8BEAdL8,guid=929900c3f57f78fe39ae4c4600000029</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=1060328cca724f3e3e127609901444691000000036920012</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wZNyg7v8xW,guid=83b7678978481e9d48e88c0b00000028</value>
+    <value type="QString">DESKTOP_AUTOSTART_ID=106796664287bf898a127655101761882200000038340012</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">EDITOR=vim</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-6FHWua</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-7o9CIf</value>
     <value type="QString">GREP_COLOR=1;33</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/hidal/.gtkrc-1.2-gnome2</value>
     <value type="QString">G_BROKEN_FILENAMES=1</value>
@@ -106,10 +106,10 @@
     <value type="QString">PS4=+ </value>
     <value type="QString">PWD=/home/hidal</value>
     <value type="QString">QTDIR=/usr/share/qt</value>
-    <value type="QString">SESSION_MANAGER=local/HiDAlina:@/tmp/.ICE-unix/3692,unix/HiDAlina:/tmp/.ICE-unix/3692</value>
+    <value type="QString">SESSION_MANAGER=local/HiDAlina:@/tmp/.ICE-unix/3834,unix/HiDAlina:/tmp/.ICE-unix/3834</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=2</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-6FHWua/ssh</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-7o9CIf/ssh</value>
     <value type="QString">TERM=linux</value>
     <value type="QString">USER=hidal</value>
     <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
@@ -119,7 +119,7 @@
     <value type="QString">XDG_CONFIG_HOME=/home/hidal/.config</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
     <value type="QString">XDG_DATA_HOME=/home/hidal/.local/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=87f498f83baf9e79a31ba9be00000252-1276099012.356520-90476672</value>
+    <value type="QString">XDG_SESSION_COOKIE=87f498f83baf9e79a31ba9be00000252-1276551015.406072-1578358471</value>
     <value type="QString">__GL_YIELD=NOTHING</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
@@ -140,12 +140,12 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
     <value type="QString">ALSA_PLUGINS_DIR=/usr/lib/alsa-lib</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-y1C8BEAdL8,guid=929900c3f57f78fe39ae4c4600000029</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=1060328cca724f3e3e127609901444691000000036920012</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wZNyg7v8xW,guid=83b7678978481e9d48e88c0b00000028</value>
+    <value type="QString">DESKTOP_AUTOSTART_ID=106796664287bf898a127655101761882200000038340012</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">EDITOR=vim</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-6FHWua</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-7o9CIf</value>
     <value type="QString">GREP_COLOR=1;33</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/hidal/.gtkrc-1.2-gnome2</value>
     <value type="QString">G_BROKEN_FILENAMES=1</value>
@@ -169,10 +169,10 @@
     <value type="QString">PS4=+ </value>
     <value type="QString">PWD=/home/hidal</value>
     <value type="QString">QTDIR=/usr/share/qt</value>
-    <value type="QString">SESSION_MANAGER=local/HiDAlina:@/tmp/.ICE-unix/3692,unix/HiDAlina:/tmp/.ICE-unix/3692</value>
+    <value type="QString">SESSION_MANAGER=local/HiDAlina:@/tmp/.ICE-unix/3834,unix/HiDAlina:/tmp/.ICE-unix/3834</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=2</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-6FHWua/ssh</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-7o9CIf/ssh</value>
     <value type="QString">TERM=linux</value>
     <value type="QString">USER=hidal</value>
     <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
@@ -182,7 +182,7 @@
     <value type="QString">XDG_CONFIG_HOME=/home/hidal/.config</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
     <value type="QString">XDG_DATA_HOME=/home/hidal/.local/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=87f498f83baf9e79a31ba9be00000252-1276099012.356520-90476672</value>
+    <value type="QString">XDG_SESSION_COOKIE=87f498f83baf9e79a31ba9be00000252-1276551015.406072-1578358471</value>
     <value type="QString">__GL_YIELD=NOTHING</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>

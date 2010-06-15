@@ -18,13 +18,6 @@ GLWidget::GLWidget(QWidget *parent)
 }
 
 GLWidget::~GLWidget(){
-    QMap<QString, Objeto*>::const_iterator i = repo->constBegin();
-
-    while(i != repo->constEnd()){
-        delete i.value();
-
-        ++i;
-    }
 }
 
 QSize GLWidget::minimumSizeHint() const { return QSize(100,100); };
