@@ -27,6 +27,7 @@ protected:
     void initializeGL();
     void paintGL();
     void resizeGL(int width, int height);
+    void mousePressEvent(QMouseEvent *event);
 
 private:
     double rot;
