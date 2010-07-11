@@ -22,7 +22,6 @@ public:
     QSize minimumSizeHint() const ;
     QSize sizeHint() const ;
 
-
 protected:
     void initializeGL();
     void paintGL();
@@ -31,9 +30,13 @@ protected:
 
 private:
     double rot;
+    bool wireFrame;
     QTime qTime;
     int lastTime;
     RepositorioObjetos *repo;
+
+private slots:
+    void setWireFrame(bool val);
 };
 
 #endif // GLWIDGET_H

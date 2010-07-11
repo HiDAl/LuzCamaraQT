@@ -18,7 +18,7 @@ void Cubo::draw(float deltaTime){
 
     glPushMatrix();
     glBegin(GL_QUADS);						// Draw A Quad
-            glColor3f(0.0f,1.0f,0.0f);                          // Set The Color To Blue
+            glColor3f(colorR,colorG,colorB);              // Set The Color
             glVertex3f( 1.0f, 1.0f,-1.0f);			// Top Right Of The Quad (Top)
             glVertex3f(-1.0f, 1.0f,-1.0f);			// Top Left Of The Quad (Top)
             glVertex3f(-1.0f, 1.0f, 1.0f);			// Bottom Left Of The Quad (Top)    
@@ -40,13 +40,13 @@ void Cubo::draw(float deltaTime){
             glVertex3f( 1.0f, 1.0f,-1.0f);			// Top Left Of The Quad (Back)
 
 
-            glColor3f(0.0f, 0.0f,1.0f);                          // Set The Color To Blue
+            glColor3f(colorR / 2.0f, colorG / 2.0f, colorB / 2.0f);  // Set The Color To Blue
             glVertex3f(-1.0f, 1.0f, 1.0f);			// Top Right Of The Quad (Left)
             glVertex3f(-1.0f, 1.0f,-1.0f);			// Top Left Of The Quad (Left)
             glVertex3f(-1.0f,-1.0f,-1.0f);			// Bottom Left Of The Quad (Left)
             glVertex3f(-1.0f,-1.0f, 1.0f);			// Bottom Right Of The Quad (Left)
 
-            glColor3f(1.0f, 0.0f,0.0f);                          // Set The Color To Blue
+            glColor3f(colorR / 2.0f, colorG / 2.0f, colorB / 2.0f);  // Set The Color To Blue
             glVertex3f( 1.0f, 1.0f,-1.0f);			// Top Right Of The Quad (Right)
             glVertex3f( 1.0f, 1.0f, 1.0f);			// Top Left Of The Quad (Right)
             glVertex3f( 1.0f,-1.0f, 1.0f);			// Bottom Left Of The Quad (Right)

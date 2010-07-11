@@ -10,6 +10,7 @@ GLWidget::GLWidget(QWidget *parent)
     : QGLWidget(QGLFormat(QGL::SampleBuffers), parent)
 {
     rot = 0.0;
+    wireFrame = false;
     qTime.start();
     lastTime = qTime.elapsed();
 
@@ -40,7 +41,10 @@ void GLWidget::paintGL()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	// Clear Screen And Depth Buffer
     glLoadIdentity();
-
+    if(wireFrame)
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    else
+        glPolygonMode(GL_FRONT, GL_FILL);
     QMap<QString, Objeto*>::const_iterator i = repo->constBegin();
 
     while(i != repo->constEnd()){
@@ -71,4 +75,10 @@ void GLWidget::mousePressEvent(QMouseEvent *event)
 {
     event->accept();
     setFocus(Qt::MouseFocusReason);
+}
+
+void GLWidget::setWireFrame(bool val)
+{
+    wireFrame = val;
+    cout << "Wireframe " << wireFrame << endl;
 }

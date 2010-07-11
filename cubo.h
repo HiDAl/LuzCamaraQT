@@ -8,6 +8,8 @@ class Cubo : public Objeto
 public:
     Cubo();
     void draw(float dt);
+
+private:
 };
 
 #endif // CUBO_H

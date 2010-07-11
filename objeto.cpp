@@ -1,6 +1,9 @@
 #include "objeto.h"
 
 Objeto::Objeto(){
+    colorR = 0.5f;
+    colorG = 0.5f;
+    colorB = 0.5f;
     this->setText("ObjetoGenerico");
 }
 
@@ -57,4 +60,10 @@ QVector3D Objeto::getPosition() const {
 
 void Objeto::operator+= (QVector3D pos){
     Position += pos;
+}
+
+void Objeto::cambiarColor(const QColor &color){
+    colorR = color.red() / 255.0f;
+    colorG = color.green() / 255.0f;
+    colorB = color.blue() / 255.0f;
 }

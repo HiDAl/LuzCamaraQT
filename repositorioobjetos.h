@@ -18,6 +18,7 @@ public:
     ~RepositorioObjetos();
 
     void insert(Objeto *obj);
+    void cambiarColor(const QColor &color);
 
 private:
     static RepositorioObjetos *inst;

@@ -37,4 +37,3 @@ void RepositorioObjetos::insert(Objeto *obj){
 
     ((QMap *)this)->insert(hash, obj);
 }
-

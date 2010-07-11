@@ -4,6 +4,7 @@ Esfera::Esfera()
 {
     sphere = gluNewQuadric();
     gluQuadricOrientation(sphere, GLU_LINE);
+    this->setText("Esfera");
 }
 
 void Esfera::draw(float deltaTime){
@@ -14,7 +15,7 @@ void Esfera::draw(float deltaTime){
     Rotate(deltaTime);
 
     glPushMatrix();
-        glColor3f(0.0f,1.0f,0.0f);                          // Set The Color To Blue
+        glColor3f(colorR,colorG,colorB);              // Set The Color
         gluSphere(sphere, 1.0, 10, 10);
     glPopMatrix();
 }

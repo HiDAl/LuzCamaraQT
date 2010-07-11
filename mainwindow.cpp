@@ -18,7 +18,9 @@ MainWindow::MainWindow(QWidget *parent) :
        debe agregar al layout que se aplicando (aca puse un verticalLayout como
        ejemplo no mas)
     */
-    ui->horizontalLayout->insertWidget(0, new GLWidget);
+
+    glWidget = new GLWidget;
+    ui->horizontalLayout->insertWidget(0, glWidget);
 
     Cubo *c1 = new Cubo;
     Esfera *e1 = new Esfera;
@@ -33,6 +35,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->listWidget->addItem(c1);
     ui->listWidget->insertItem(0, e1);
+
+    connect(ui->checkBox, SIGNAL(toggled(bool)), glWidget, SLOT(setWireFrame(bool)));
 }
 
 MainWindow::~MainWindow()
@@ -88,4 +92,15 @@ void MainWindow::keyPressEvent(QKeyEvent *event){
         o->operator +=(QVector3D(0, 0, -0.1));
         break;
     }
+}
+
+void MainWindow::on_colorButton_clicked(bool checked)
+{
+    QColorDialog *colorDialog = new QColorDialog();
+    colorDialog->open(this, SLOT(cambiarColor(QColor)));
+}
+
+void MainWindow::cambiarColor(const QColor &color)
+{
+    ((Objeto *)ui->listWidget->currentItem())->cambiarColor(color);
 }
