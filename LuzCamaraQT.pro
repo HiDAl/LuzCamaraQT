@@ -18,3 +18,4 @@ HEADERS += mainwindow.h \
     esfera.h \
     repositorioobjetos.h
 FORMS += mainwindow.ui
+CONFIG += release

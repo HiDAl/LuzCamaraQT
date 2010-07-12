@@ -1,7 +1,19 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ** Created: Sun Jul 11 17:40:00 2010
+=======
+** Created: Sun Jul 11 21:52:47 2010
+>>>>>>> Stashed changes
+=======
+** Created: Sun Jul 11 21:52:47 2010
+>>>>>>> Stashed changes
+=======
+** Created: Sun Jul 11 21:52:47 2010
+>>>>>>> Stashed changes
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
