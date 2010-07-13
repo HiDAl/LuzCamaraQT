@@ -52,7 +52,7 @@ void GLWidget::paintGL()
         if(i.value()->getWired())
             glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         else
-            glPolygonMode(GL_FRONT, GL_FILL);
+            glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
         i.value()->draw((qTime.elapsed() - lastTime + 1)/1000.0);
 
