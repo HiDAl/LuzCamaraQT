@@ -220,7 +220,7 @@
       <item row="3" column="0">
        <widget class="QCheckBox" name="checkBox_2">
         <property name="text">
-         <string>Apagr Luces</string>
+         <string>Apagar Luces</string>
         </property>
        </widget>
       </item>
@@ -234,7 +234,7 @@
      <x>0</x>
      <y>0</y>
      <width>501</width>
-     <height>19</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

@@ -12,6 +12,9 @@ Luz::Luz(GLenum l)
 }
 
 void Luz::draw(float deltaTime){
+
+    bool iluminar = glIsEnabled(GL_LIGHTING) ? true : false;  //*si no hay luz solo dibujar y no hacer nada mas
+
     glLoadIdentity();                                       // Reset The Current Modelview Matrix
 
     glTranslatef(Position.x(), Position.y(), Position.z());
@@ -23,6 +26,9 @@ void Luz::draw(float deltaTime){
         glColor3f(colorR,colorG,colorB);              // Set The Color
         gluSphere(sphere, .1, 10, 10);
     glPopMatrix();
+
+    if(!iluminar) return;                   //*no iluminar
+
     glEnable(GL_LIGHTING);
 
     GLfloat ambientlight[]  =	{colorR , colorG, colorB, 1.0f};

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Tue Jul 13 02:44:39 2010
+** Created: Tue Jul 13 13:46:26 2010
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -217,7 +217,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 501, 19));
+        menuBar->setGeometry(QRect(0, 0, 501, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -249,7 +249,7 @@ public:
          << QApplication::translate("MainWindow", "Esfera", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("MainWindow", "Luz", 0, QApplication::UnicodeUTF8)
         );
-        checkBox_2->setText(QApplication::translate("MainWindow", "Apagr Luces", 0, QApplication::UnicodeUTF8));
+        checkBox_2->setText(QApplication::translate("MainWindow", "Apagar Luces", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
