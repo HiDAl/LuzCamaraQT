@@ -36,9 +36,8 @@ void GLWidget::initializeGL()
 
     glEnable(GL_LIGHTING);
 
-    glCullFace(GL_BACK); //No dibujamos las caras traseras
-
-    glEnable(GL_CULL_FACE);
+//    glCullFace(GL_BACK); //No dibujamos las caras traseras
+//    glEnable(GL_CULL_FACE);
 
     resizeGL(this->width(), this->height());
 }
