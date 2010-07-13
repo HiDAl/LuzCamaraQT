@@ -22,7 +22,7 @@ GLWidget::~GLWidget(){
 }
 
 QSize GLWidget::minimumSizeHint() const { return QSize(100,100); };
-QSize GLWidget::sizeHint() const { return QSize(400, 400); };
+QSize GLWidget::sizeHint() const { return QSize(800,800); };
 
 void GLWidget::initializeGL()
 {
@@ -41,13 +41,14 @@ void GLWidget::paintGL()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	// Clear Screen And Depth Buffer
     glLoadIdentity();
-    if(wireFrame)
-        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    else
-        glPolygonMode(GL_FRONT, GL_FILL);
     QMap<QString, Objeto*>::const_iterator i = repo->constBegin();
 
     while(i != repo->constEnd()){
+        if(i.value()->getWired())
+            glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        else
+            glPolygonMode(GL_FRONT, GL_FILL);
+
         i.value()->draw((qTime.elapsed() - lastTime + 1)/1000.0);
 
         ++i;
@@ -80,5 +81,6 @@ void GLWidget::mousePressEvent(QMouseEvent *event)
 void GLWidget::setWireFrame(bool val)
 {
     wireFrame = val;
-    cout << "Wireframe " << wireFrame << endl;
+
+    RepositorioObjetos::instance()->getSelected()->setWired(val);
 }

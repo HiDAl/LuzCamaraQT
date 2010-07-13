@@ -1,14 +1,19 @@
 #include "objeto.h"
 
+#include <iostream>
+
+using namespace std;
+
 Objeto::Objeto(){
     colorR = 0.5f;
     colorG = 0.5f;
     colorB = 0.5f;
     this->setText("ObjetoGenerico");
+    wired = false;
 }
 
 void Objeto::draw(float a) {
-    a;
+    //a;
 }
 
 // Se hacen las revisiones de que sean distinto de cero para evitar una multiplicacion matricial
@@ -58,6 +63,14 @@ QVector3D Objeto::getPosition() const {
     return Position;
 }
 
+
+bool Objeto::getWired() const {
+    return wired;
+}
+void Objeto::setWired(bool w){
+    wired = w;
+}
+
 void Objeto::operator+= (QVector3D pos){
     Position += pos;
 }
@@ -67,3 +80,4 @@ void Objeto::cambiarColor(const QColor &color){
     colorG = color.green() / 255.0f;
     colorB = color.blue() / 255.0f;
 }
+

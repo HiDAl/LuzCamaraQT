@@ -7,7 +7,6 @@
 
 class Objeto : public QListWidgetItem
 {
-
 protected:
     QVector3D Position;
     QVector3D Rotation; // vector con el valor de rotacion en cada eje (en grados)
@@ -15,6 +14,7 @@ protected:
     float colorR;
     float colorG;
     float colorB;
+    bool wired;
 
     void Rotate(float deltaTime); // deltaTime es para calcular el valor que debe tener el angulo de rotacion nuevo
 
@@ -31,9 +31,13 @@ public:
     void setPosition(QVector3D pos);
     QVector3D getPosition() const;
 
+    bool getWired() const;
+    void setWired(bool w);
+
     void operator+= (QVector3D);
 
     void cambiarColor(const QColor &color);
+
 };
 
 #endif // OBJETO_H

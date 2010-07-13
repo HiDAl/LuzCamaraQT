@@ -28,6 +28,8 @@ private:
 private slots:
     void on_colorButton_clicked(bool checked);
     void cambiarColor(const QColor &color);
+    void onListChanged();
+    void slideMoved(int value);
 };
 
 #endif // MAINWINDOW_H

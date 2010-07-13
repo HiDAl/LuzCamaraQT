@@ -37,6 +37,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->listWidget->insertItem(0, e1);
 
     connect(ui->checkBox, SIGNAL(toggled(bool)), glWidget, SLOT(setWireFrame(bool)));
+    connect(ui->listWidget, SIGNAL(itemSelectionChanged()), this, SLOT(onListChanged()));
+    connect(ui->XAxis, SIGNAL(sliderMoved(int)), this, SLOT(slideMoved(int)));
+    connect(ui->YAxis, SIGNAL(sliderMoved(int)), this, SLOT(slideMoved(int)));
+    connect(ui->ZAxis, SIGNAL(sliderMoved(int)), this, SLOT(slideMoved(int)));
 }
 
 MainWindow::~MainWindow()
@@ -91,7 +95,11 @@ void MainWindow::keyPressEvent(QKeyEvent *event){
         cout<<o->text().toStdString()<<" "<<o->getPosition().z()<<endl;
         o->operator +=(QVector3D(0, 0, -0.1));
         break;
-    }
+    }    
+
+    ui->XAxis->setValue((int)(o->getPosition().x()*10));
+    ui->YAxis->setValue((int)(o->getPosition().y()*10));
+    ui->ZAxis->setValue((int)(o->getPosition().z()*10));
 }
 
 void MainWindow::on_colorButton_clicked(bool checked)
@@ -103,4 +111,26 @@ void MainWindow::on_colorButton_clicked(bool checked)
 void MainWindow::cambiarColor(const QColor &color)
 {
     ((Objeto *)ui->listWidget->currentItem())->cambiarColor(color);
+}
+
+void MainWindow::onListChanged(){
+    Objeto *obj = (Objeto *)ui->listWidget->currentItem();
+    repo->setSelected(obj->text());
+
+    ui->checkBox->setChecked(obj->getWired());
+
+    ui->XAxis->setValue((int)(obj->getPosition().x()*10));
+    ui->YAxis->setValue((int)(obj->getPosition().y()*10));
+    ui->ZAxis->setValue((int)(obj->getPosition().z()*10));
+}
+
+void MainWindow::slideMoved(int value){
+    cout<<value<<endl;
+
+    repo->getSelected()->setPosition(
+            QVector3D(
+                ui->XAxis->value()/10,
+                ui->YAxis->value()/10,
+                ui->ZAxis->value()/10
+            ));
 }

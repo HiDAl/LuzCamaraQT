@@ -19,10 +19,13 @@ public:
 
     void insert(Objeto *obj);
     void cambiarColor(const QColor &color);
+    void setSelected(QString sel);
+    Objeto *getSelected();
 
 private:
     static RepositorioObjetos *inst;
     int count;
+    QString selected;
 
 };
 

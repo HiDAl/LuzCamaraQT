@@ -5,6 +5,7 @@ RepositorioObjetos *RepositorioObjetos::inst = 0;
 RepositorioObjetos::RepositorioObjetos()
 {
     count = 0;
+    selected = "";
 }
 
 RepositorioObjetos::~RepositorioObjetos(){
@@ -29,11 +30,20 @@ void RepositorioObjetos::insert(Objeto *obj){
     QString hash = "";
 
     hash += obj->text();
-    hash += " " + (count + 1);
+    hash += " ID: " + QString::number(count + 1);
 
     obj->setText(hash);
 
     count++;
 
     ((QMap *)this)->insert(hash, obj);
+}
+
+
+void RepositorioObjetos::setSelected(QString sel){
+    selected = sel;
+}
+
+Objeto *RepositorioObjetos::getSelected(){
+    return ((QMap *)this)->find(selected).value();
 }
