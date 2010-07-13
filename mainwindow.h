@@ -24,12 +24,16 @@ private:
     Ui::MainWindow *ui;
     GLWidget *glWidget;
     RepositorioObjetos * repo;
+    GLenum luz;
+    GLenum nextLight();
 
 private slots:
     void on_colorButton_clicked(bool checked);
     void cambiarColor(const QColor &color);
     void onListChanged();
     void slideMoved(int value);
+    void rotChanged(double value);
+    void addObject();
 };
 
 #endif // MAINWINDOW_H

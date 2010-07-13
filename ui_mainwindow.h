@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon Jul 12 17:33:50 2010
+** Created: Mon Jul 12 23:53:52 2010
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -15,9 +15,10 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QCheckBox>
+#include <QtGui/QComboBox>
+#include <QtGui/QDoubleSpinBox>
 #include <QtGui/QFormLayout>
 #include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QListWidget>
@@ -25,6 +26,7 @@
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QSlider>
+#include <QtGui/QSpacerItem>
 #include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -36,18 +38,27 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QGridLayout *gridLayout;
-    QHBoxLayout *horizontalLayout;
+    QGridLayout *gridLayout_2;
     QListWidget *listWidget;
     QVBoxLayout *verticalLayout;
     QCheckBox *checkBox;
     QPushButton *colorButton;
     QFormLayout *formLayout;
-    QSlider *XAxis;
-    QSlider *YAxis;
-    QSlider *ZAxis;
     QLabel *label;
+    QSlider *XAxis;
     QLabel *label_2;
+    QSlider *YAxis;
     QLabel *label_3;
+    QSlider *ZAxis;
+    QDoubleSpinBox *YRot;
+    QDoubleSpinBox *XRot;
+    QDoubleSpinBox *ZRot;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QPushButton *pushButton;
+    QComboBox *comboBox;
+    QSpacerItem *horizontalSpacer;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
 
@@ -68,9 +79,9 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        gridLayout_2 = new QGridLayout();
+        gridLayout_2->setSpacing(6);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         listWidget = new QListWidget(centralWidget);
         listWidget->setObjectName(QString::fromUtf8("listWidget"));
         QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Expanding);
@@ -80,7 +91,7 @@ public:
         listWidget->setSizePolicy(sizePolicy1);
         listWidget->setMaximumSize(QSize(100, 16777215));
 
-        horizontalLayout->addWidget(listWidget);
+        gridLayout_2->addWidget(listWidget, 0, 3, 1, 1);
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
@@ -100,6 +111,11 @@ public:
         formLayout->setSpacing(6);
         formLayout->setObjectName(QString::fromUtf8("formLayout"));
         formLayout->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
+        label = new QLabel(centralWidget);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        formLayout->setWidget(1, QFormLayout::LabelRole, label);
+
         XAxis = new QSlider(centralWidget);
         XAxis->setObjectName(QString::fromUtf8("XAxis"));
         XAxis->setMinimum(-100);
@@ -113,6 +129,11 @@ public:
 
         formLayout->setWidget(1, QFormLayout::FieldRole, XAxis);
 
+        label_2 = new QLabel(centralWidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        formLayout->setWidget(2, QFormLayout::LabelRole, label_2);
+
         YAxis = new QSlider(centralWidget);
         YAxis->setObjectName(QString::fromUtf8("YAxis"));
         YAxis->setMinimum(-100);
@@ -121,37 +142,71 @@ public:
 
         formLayout->setWidget(2, QFormLayout::FieldRole, YAxis);
 
-        ZAxis = new QSlider(centralWidget);
-        ZAxis->setObjectName(QString::fromUtf8("ZAxis"));
-        ZAxis->setMinimum(-100);
-        ZAxis->setMaximum(100);
-        ZAxis->setOrientation(Qt::Horizontal);
-
-        formLayout->setWidget(3, QFormLayout::FieldRole, ZAxis);
-
-        label = new QLabel(centralWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        formLayout->setWidget(1, QFormLayout::LabelRole, label);
-
-        label_2 = new QLabel(centralWidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        formLayout->setWidget(2, QFormLayout::LabelRole, label_2);
-
         label_3 = new QLabel(centralWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         formLayout->setWidget(3, QFormLayout::LabelRole, label_3);
 
+        ZAxis = new QSlider(centralWidget);
+        ZAxis->setObjectName(QString::fromUtf8("ZAxis"));
+        ZAxis->setMinimum(60);
+        ZAxis->setMaximum(200);
+        ZAxis->setOrientation(Qt::Horizontal);
+
+        formLayout->setWidget(3, QFormLayout::FieldRole, ZAxis);
+
+        YRot = new QDoubleSpinBox(centralWidget);
+        YRot->setObjectName(QString::fromUtf8("YRot"));
+
+        formLayout->setWidget(5, QFormLayout::FieldRole, YRot);
+
+        XRot = new QDoubleSpinBox(centralWidget);
+        XRot->setObjectName(QString::fromUtf8("XRot"));
+
+        formLayout->setWidget(4, QFormLayout::FieldRole, XRot);
+
+        ZRot = new QDoubleSpinBox(centralWidget);
+        ZRot->setObjectName(QString::fromUtf8("ZRot"));
+
+        formLayout->setWidget(6, QFormLayout::FieldRole, ZRot);
+
+        label_4 = new QLabel(centralWidget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        formLayout->setWidget(4, QFormLayout::LabelRole, label_4);
+
+        label_5 = new QLabel(centralWidget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        formLayout->setWidget(5, QFormLayout::LabelRole, label_5);
+
+        label_6 = new QLabel(centralWidget);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+
+        formLayout->setWidget(6, QFormLayout::LabelRole, label_6);
+
 
         verticalLayout->addLayout(formLayout);
 
 
-        horizontalLayout->addLayout(verticalLayout);
+        gridLayout_2->addLayout(verticalLayout, 0, 4, 1, 1);
+
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+
+        gridLayout_2->addWidget(pushButton, 3, 4, 1, 1);
+
+        comboBox = new QComboBox(centralWidget);
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+
+        gridLayout_2->addWidget(comboBox, 3, 3, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer, 0, 2, 1, 1);
 
 
-        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 1);
+        gridLayout->addLayout(gridLayout_2, 0, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -175,6 +230,16 @@ public:
         label->setText(QApplication::translate("MainWindow", "Eje X:", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("MainWindow", "Eje Y:", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MainWindow", "Eje Z:", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("MainWindow", "Rot X:", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MainWindow", "Rot Y:", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("MainWindow", "Rot Z:", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("MainWindow", "Agregar", 0, QApplication::UnicodeUTF8));
+        comboBox->clear();
+        comboBox->insertItems(0, QStringList()
+         << QApplication::translate("MainWindow", "Cubo", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Esfera", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Luz", 0, QApplication::UnicodeUTF8)
+        );
     } // retranslateUi
 
 };

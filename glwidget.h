@@ -8,6 +8,7 @@
 
 #include "cubo.h"
 #include "esfera.h"
+#include "luz.h"
 #include "repositorioobjetos.h"
 
 

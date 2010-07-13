@@ -10,12 +10,14 @@ SOURCES += main.cpp \
     cubo.cpp \
     glwidget.cpp \
     esfera.cpp \
-    repositorioobjetos.cpp
+    repositorioobjetos.cpp \
+    luz.cpp
 HEADERS += mainwindow.h \
     objeto.h \
     cubo.h \
     glwidget.h \
     esfera.h \
-    repositorioobjetos.h
+    repositorioobjetos.h \
+    luz.h
 FORMS += mainwindow.ui
-CONFIG += release
+#CONFIG += release

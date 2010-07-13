@@ -25,8 +25,8 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
-      <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="3">
        <widget class="QListWidget" name="listWidget">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -42,7 +42,7 @@
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="4">
        <layout class="QVBoxLayout" name="verticalLayout">
         <property name="sizeConstraint">
          <enum>QLayout::SetFixedSize</enum>
@@ -66,6 +66,13 @@
           <property name="fieldGrowthPolicy">
            <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
           </property>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Eje X:</string>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="1">
            <widget class="QSlider" name="XAxis">
             <property name="minimum">
@@ -94,6 +101,13 @@
             </property>
            </widget>
           </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Eje Y:</string>
+            </property>
+           </widget>
+          </item>
           <item row="2" column="1">
            <widget class="QSlider" name="YAxis">
             <property name="minimum">
@@ -107,33 +121,6 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
-           <widget class="QSlider" name="ZAxis">
-            <property name="minimum">
-             <number>-100</number>
-            </property>
-            <property name="maximum">
-             <number>100</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string>Eje X:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Eje Y:</string>
-            </property>
-           </widget>
-          </item>
           <item row="3" column="0">
            <widget class="QLabel" name="label_3">
             <property name="text">
@@ -141,9 +128,91 @@
             </property>
            </widget>
           </item>
+          <item row="3" column="1">
+           <widget class="QSlider" name="ZAxis">
+            <property name="minimum">
+             <number>60</number>
+            </property>
+            <property name="maximum">
+             <number>200</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QDoubleSpinBox" name="YRot"/>
+          </item>
+          <item row="4" column="1">
+           <widget class="QDoubleSpinBox" name="XRot"/>
+          </item>
+          <item row="6" column="1">
+           <widget class="QDoubleSpinBox" name="ZRot"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Rot X:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Rot Y:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Rot Z:</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </item>
        </layout>
+      </item>
+      <item row="3" column="4">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Agregar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QComboBox" name="comboBox">
+        <item>
+         <property name="text">
+          <string>Cubo</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Esfera</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Luz</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </item>

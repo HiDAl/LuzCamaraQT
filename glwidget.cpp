@@ -34,6 +34,8 @@ void GLWidget::initializeGL()
     glEnable(GL_COLOR_MATERIAL );
     glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 
+    glEnable(GL_LIGHTING);
+
     resizeGL(this->width(), this->height());
 }
 
