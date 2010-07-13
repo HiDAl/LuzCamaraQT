@@ -12,6 +12,9 @@ SOURCES += main.cpp \
     esfera.cpp \
     repositorioobjetos.cpp \
     luz.cpp
+
+RESOURCES     = textures.qrc
+
 HEADERS += mainwindow.h \
     objeto.h \
     cubo.h \
@@ -20,4 +23,6 @@ HEADERS += mainwindow.h \
     repositorioobjetos.h \
     luz.h
 FORMS += mainwindow.ui
+
+
 #CONFIG += release

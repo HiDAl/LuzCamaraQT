@@ -18,39 +18,48 @@ void Cubo::draw(float deltaTime){
 
     glPushMatrix();
     glBegin(GL_QUADS);						// Draw A Quad
-            glColor3f(colorR,colorG,colorB);              // Set The Color
-            glVertex3f( 1.0f, 1.0f,-1.0f);			// Top Right Of The Quad (Top)
-            glVertex3f(-1.0f, 1.0f,-1.0f);			// Top Left Of The Quad (Top)
-            glVertex3f(-1.0f, 1.0f, 1.0f);			// Bottom Left Of The Quad (Top)    
-            glVertex3f( 1.0f, 1.0f, 1.0f);			// Bottom Right Of The Quad (Top)
+            glColor3f(colorR,colorG,colorB);
+            // Cara de Atras
+            glNormal3f( 0.0f, 0.0f,1.0f);      //defino la normal...
+            glVertex3f( 1.0f, -1.0f, -1.0f);
+            glVertex3f( 1.0f,  1.0f, -1.0f);
+            glVertex3f(-1.0f,  1.0f, -1.0f);
+            glVertex3f(-1.0f, -1.0f, -1.0f);
 
-            glVertex3f( 1.0f,-1.0f, 1.0f);			// Top Right Of The Quad (Bottom)
-            glVertex3f(-1.0f,-1.0f, 1.0f);			// Top Left Of The Quad (Bottom)
-            glVertex3f(-1.0f,-1.0f,-1.0f);			// Bottom Left Of The Quad (Bottom)
-            glVertex3f( 1.0f,-1.0f,-1.0f);			// Bottom Right Of The Quad (Bottom)
+            // Cara de Adelante
+            glNormal3f( 0.0f, 0.0f, -1.0f);      //defino la normal...
+            glVertex3f( 1.0f, -1.0f, 1.0f);
+            glVertex3f( 1.0f,  1.0f, 1.0f);
+            glVertex3f(-1.0f,  1.0f, 1.0f);
+            glVertex3f(-1.0f, -1.0f, 1.0f);
 
-            glVertex3f( 1.0f, 1.0f, 1.0f);			// Top Right Of The Quad (Front)
-            glVertex3f(-1.0f, 1.0f, 1.0f);			// Top Left Of The Quad (Front)
-            glVertex3f(-1.0f,-1.0f, 1.0f);			// Bottom Left Of The Quad (Front)
-            glVertex3f( 1.0f,-1.0f, 1.0f);			// Bottom Right Of The Quad (Front)
+            // Right face
+            glNormal3f( -1.0f, 0.0f, 0.0f);
+            glVertex3f( 1.0f, -1.0f,  1.0f);
+            glVertex3f( 1.0f,  1.0f,  1.0f);
+            glVertex3f( 1.0f,  1.0f, -1.0f);
+            glVertex3f( 1.0f, -1.0f, -1.0f);
 
-            glVertex3f( 1.0f,-1.0f,-1.0f);			// Bottom Left Of The Quad (Back)
-            glVertex3f(-1.0f,-1.0f,-1.0f);			// Bottom Right Of The Quad (Back)
-            glVertex3f(-1.0f, 1.0f,-1.0f);			// Top Right Of The Quad (Back)
-            glVertex3f( 1.0f, 1.0f,-1.0f);			// Top Left Of The Quad (Back)
+            // Left Face
+            glNormal3f(1.0f, 0.0f, 0.0f);
+            glVertex3f(-1.0f,  1.0f, -1.0f);
+            glVertex3f(-1.0f,  1.0f,  1.0f);
+            glVertex3f(-1.0f, -1.0f,  1.0f);
+            glVertex3f(-1.0f, -1.0f, -1.0f);
 
+            // Top Face
+            glNormal3f( 0.0f, -1.0f, 0.0f);
+            glVertex3f( 1.0f,  1.0f, -1.0f);
+            glVertex3f( 1.0f,  1.0f,  1.0f);
+            glVertex3f(-1.0f,  1.0f,  1.0f);
+            glVertex3f(-1.0f,  1.0f, -1.0f);
 
-            glColor3f(colorR / 2.0f, colorG / 2.0f, colorB / 2.0f);  // Set The Color To Blue
-            glVertex3f(-1.0f, 1.0f, 1.0f);			// Top Right Of The Quad (Left)
-            glVertex3f(-1.0f, 1.0f,-1.0f);			// Top Left Of The Quad (Left)
-            glVertex3f(-1.0f,-1.0f,-1.0f);			// Bottom Left Of The Quad (Left)
-            glVertex3f(-1.0f,-1.0f, 1.0f);			// Bottom Right Of The Quad (Left)
-
-            glColor3f(colorR / 2.0f, colorG / 2.0f, colorB / 2.0f);  // Set The Color To Blue
-            glVertex3f( 1.0f, 1.0f,-1.0f);			// Top Right Of The Quad (Right)
-            glVertex3f( 1.0f, 1.0f, 1.0f);			// Top Left Of The Quad (Right)
-            glVertex3f( 1.0f,-1.0f, 1.0f);			// Bottom Left Of The Quad (Right)
-            glVertex3f( 1.0f,-1.0f,-1.0f);			// Bottom Right Of The Quad (Right)
+            // Bottom Face
+            glNormal3f( 0.0f, 1.0f, 0.0f);
+            glVertex3f(-1.0f, -1.0f,  1.0f);
+            glVertex3f( 1.0f, -1.0f,  1.0f);
+            glVertex3f( 1.0f, -1.0f, -1.0f);
+            glVertex3f(-1.0f, -1.0f, -1.0f);
     glEnd();
 
     glPopMatrix();

@@ -54,6 +54,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->YAxis, SIGNAL(sliderMoved(int)), this, SLOT(slideMoved(int)));
     connect(ui->ZAxis, SIGNAL(sliderMoved(int)), this, SLOT(slideMoved(int)));
     connect(ui->XRot, SIGNAL(valueChanged(double)), this, SLOT(rotChanged(double)));
+    connect(ui->YRot, SIGNAL(valueChanged(double)), this, SLOT(rotChanged(double)));
+    connect(ui->ZRot, SIGNAL(valueChanged(double)), this, SLOT(rotChanged(double)));
 
     connect(ui->pushButton, SIGNAL(pressed()), this, SLOT(addObject()));
 }
@@ -141,6 +143,8 @@ void MainWindow::onListChanged(){
     ui->XRot->setValue(obj->getRotVelocity().x());
     ui->YRot->setValue(obj->getRotVelocity().y());
     ui->ZRot->setValue(obj->getRotVelocity().z());
+
+    //((GLWidget *)ui->gridLayout_2->itemAt(1))->setFocus(Qt::MouseFocusReason);
 }
 
 void MainWindow::addObject(){
@@ -150,21 +154,23 @@ void MainWindow::addObject(){
         obj = new Cubo;
     else if(ui->comboBox->currentText() == "Esfera")
         obj = new Esfera;
-    else if(ui->comboBox->currentText() == "Luz")
+    else if(ui->comboBox->currentText() == "Luz"){
         obj = new Luz(nextLight());
+        obj->cambiarColor(QColor(255, 255, 255));
+    }
 
     if(!obj) return;
 
-    obj->setPosition(QVector3D(1, 0, -15));
+    obj->setPosition(QVector3D(0, 0, -9));
 
     repo->insert(obj);
     ui->listWidget->addItem(obj);
+
+    ui->listWidget->setCurrentItem(obj);
 }
 
 GLenum MainWindow::nextLight(){
-    cout<<GL_LIGHT0<<" "<<GL_LIGHT1<<endl;
-
-    return ++luz;
+    return luz++;
 }
 void MainWindow::rotChanged(double value){    
     repo->getSelected()->setRotVelocity(
@@ -182,4 +188,11 @@ void MainWindow::slideMoved(int value){
                 ui->YAxis->value()/10,
                 -ui->ZAxis->value()/10
             ));
+}
+
+void MainWindow::on_checkBox_2_toggled(bool checked){
+    if(checked)
+        glDisable(GL_LIGHTING);
+    else
+        glEnable(GL_LIGHTING);
 }

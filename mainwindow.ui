@@ -40,6 +40,9 @@
           <height>16777215</height>
          </size>
         </property>
+        <property name="currentRow">
+         <number>-1</number>
+        </property>
        </widget>
       </item>
       <item row="0" column="4">
@@ -128,19 +131,6 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
-           <widget class="QSlider" name="ZAxis">
-            <property name="minimum">
-             <number>60</number>
-            </property>
-            <property name="maximum">
-             <number>200</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
           <item row="5" column="1">
            <widget class="QDoubleSpinBox" name="YRot"/>
           </item>
@@ -168,6 +158,19 @@
            <widget class="QLabel" name="label_6">
             <property name="text">
              <string>Rot Z:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QSlider" name="ZAxis">
+            <property name="minimum">
+             <number>60</number>
+            </property>
+            <property name="maximum">
+             <number>200</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
@@ -213,6 +216,13 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="checkBox_2">
+        <property name="text">
+         <string>Apagr Luces</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>

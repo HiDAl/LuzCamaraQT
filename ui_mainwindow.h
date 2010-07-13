@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon Jul 12 23:53:52 2010
+** Created: Tue Jul 13 02:44:39 2010
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -49,16 +49,17 @@ public:
     QLabel *label_2;
     QSlider *YAxis;
     QLabel *label_3;
-    QSlider *ZAxis;
     QDoubleSpinBox *YRot;
     QDoubleSpinBox *XRot;
     QDoubleSpinBox *ZRot;
     QLabel *label_4;
     QLabel *label_5;
     QLabel *label_6;
+    QSlider *ZAxis;
     QPushButton *pushButton;
     QComboBox *comboBox;
     QSpacerItem *horizontalSpacer;
+    QCheckBox *checkBox_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
 
@@ -147,14 +148,6 @@ public:
 
         formLayout->setWidget(3, QFormLayout::LabelRole, label_3);
 
-        ZAxis = new QSlider(centralWidget);
-        ZAxis->setObjectName(QString::fromUtf8("ZAxis"));
-        ZAxis->setMinimum(60);
-        ZAxis->setMaximum(200);
-        ZAxis->setOrientation(Qt::Horizontal);
-
-        formLayout->setWidget(3, QFormLayout::FieldRole, ZAxis);
-
         YRot = new QDoubleSpinBox(centralWidget);
         YRot->setObjectName(QString::fromUtf8("YRot"));
 
@@ -185,6 +178,14 @@ public:
 
         formLayout->setWidget(6, QFormLayout::LabelRole, label_6);
 
+        ZAxis = new QSlider(centralWidget);
+        ZAxis->setObjectName(QString::fromUtf8("ZAxis"));
+        ZAxis->setMinimum(60);
+        ZAxis->setMaximum(200);
+        ZAxis->setOrientation(Qt::Horizontal);
+
+        formLayout->setWidget(3, QFormLayout::FieldRole, ZAxis);
+
 
         verticalLayout->addLayout(formLayout);
 
@@ -205,6 +206,11 @@ public:
 
         gridLayout_2->addItem(horizontalSpacer, 0, 2, 1, 1);
 
+        checkBox_2 = new QCheckBox(centralWidget);
+        checkBox_2->setObjectName(QString::fromUtf8("checkBox_2"));
+
+        gridLayout_2->addWidget(checkBox_2, 3, 0, 1, 1);
+
 
         gridLayout->addLayout(gridLayout_2, 0, 0, 1, 1);
 
@@ -218,6 +224,9 @@ public:
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
 
         retranslateUi(MainWindow);
+
+        listWidget->setCurrentRow(-1);
+
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -240,6 +249,7 @@ public:
          << QApplication::translate("MainWindow", "Esfera", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("MainWindow", "Luz", 0, QApplication::UnicodeUTF8)
         );
+        checkBox_2->setText(QApplication::translate("MainWindow", "Apagr Luces", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

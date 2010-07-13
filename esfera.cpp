@@ -16,6 +16,6 @@ void Esfera::draw(float deltaTime){
 
     glPushMatrix();
         glColor3f(colorR,colorG,colorB);              // Set The Color
-        gluSphere(sphere, 1.0, 10, 10);
+        gluSphere(sphere, 1.0, 30, 30);
     glPopMatrix();
 }

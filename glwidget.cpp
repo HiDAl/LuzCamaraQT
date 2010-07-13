@@ -36,6 +36,10 @@ void GLWidget::initializeGL()
 
     glEnable(GL_LIGHTING);
 
+    glCullFace(GL_BACK); //No dibujamos las caras traseras
+
+    glEnable(GL_CULL_FACE);
+
     resizeGL(this->width(), this->height());
 }
 
@@ -57,21 +61,36 @@ void GLWidget::paintGL()
     }
 
     lastTime = qTime.elapsed();
-    QTimer::singleShot(100/21, this, SLOT(repaint()));
+    QTimer::singleShot(1000/21, this, SLOT(repaint()));
 }
 
 void GLWidget::resizeGL(int width, int height)
 {
+
     glViewport(0,0,width,height);	// Reset The Current Viewport
-
+/*
     glMatrixMode(GL_PROJECTION);	// Select The Projection Matrix
-    glLoadIdentity();		// Reset The Projection Matrix
+    glLoadIdentity();
 
-    // Calculate The Aspect Ratio Of The Window
     gluPerspective(45.0f,(GLfloat)width/(GLfloat)height,0.1f,100.0f);
 
-    glMatrixMode(GL_MODELVIEW);     // Select The Modelview Matrix
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();*/
+
+    glClearDepth(1.0);
+    glDepthFunc(GL_LEQUAL);
+
+    glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
+    gluPerspective(60.0, width/height   , 1.0, 100.0);
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    gluLookAt( 0.0f, 0.0f, 3.0f, //Desde donde miro
+               0.0f, 0.0f, 0.0f,  //Hacia donde miro.
+               0.0f, 1.0f, 0.0f   //Hacia arriba
+                         );
 }
 
 void GLWidget::mousePressEvent(QMouseEvent *event)
